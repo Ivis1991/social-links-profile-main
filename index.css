@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Inter-Bold";
+    src: url(/assets/fonts/Inter-Bold) format("ttf");
+  }
+
+  @font-face {
+    font-family: "Inter-SemiBold";
+    src: url(/assets/fonts/Inter-SemiBold) format("ttf");
+  }
+
+  @font-face {
+    font-family: "Inter-Regular";
+    src: url(/assets/fonts/Inter-Regular) format("ttf");
+  }
+}
+
+@layer components {
+  button {
+    @apply bg-grey h-10 px-4 rounded-lg text-White font-inter-semibold font-semibold text-[14px] hover:bg-Green hover:text-off-Black hover:cursor-pointer;
+  }
+  img {
+    @apply rounded-full;
+  }
+}
